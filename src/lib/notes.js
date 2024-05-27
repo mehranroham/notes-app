@@ -26,7 +26,6 @@ export async function saveNote(note) {
     trim: true,
     replacement: '-',
   });
-  console.log(note.slug);
   note.description = xss(note.description);
 
   const extention = note.image.name.split('.').pop();

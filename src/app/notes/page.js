@@ -3,6 +3,11 @@ import GridNotes from '@/components/grid-notes';
 import Link from 'next/link';
 import { Suspense } from 'react';
 
+export const metadata = {
+  title: 'Notes',
+  description: 'A Daily NoteBook',
+};
+
 export default function page() {
   return (
     <div className='flex flex-col gap-7'>
